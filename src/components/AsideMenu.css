@@ -1,0 +1,74 @@
+.aside-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px 0 8px;
+  min-height: 48px;
+}
+.aside-menu.open .aside-top {
+  padding-right: 18px;
+}
+
+.aside-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 64px;
+  background: rgba(20, 20, 20, 0.95);
+  box-shadow: 2px 0 12px rgba(0,0,0,0.12);
+  z-index: 1200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: width 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.aside-menu.open {
+  width: 220px;
+}
+
+.menu-toggle {
+  margin: 18px 0 24px 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s;
+}
+.menu-toggle:hover {
+  color: #ff004f;
+}
+
+.menu-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.menu-item:hover {
+  background: rgba(255,255,255,0.08);
+  color: #ff004f;
+}
+.menu-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.menu-label {
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}

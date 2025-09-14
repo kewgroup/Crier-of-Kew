@@ -1,17 +1,16 @@
-import { useState } from 'react'
-import Header from './components/Header'
-import './App.css'
-
+import AsideMenu from './components/AsideMenu';
+import VideoHero from './components/VideoHero';
+import './components/AsideMenu.css';
+import './App.css';
 function App() {
- 
-
   return (
     <>
-      <div>
-      <Header />
-      </div>
-      </>
-  )
+    <div className="app-root">
+      <AsideMenu />
+      <VideoHero />
+    </div>
+    </>
+  );
 }
 
-export default App
+export default App;
