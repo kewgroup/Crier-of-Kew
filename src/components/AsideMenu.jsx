@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './AsideMenu.css';
 
 const menuItems = [
-  { icon: '🏠', label: 'Home' },
-  { icon: '🎬', label: 'Vídeos' },
-  { icon: '📂', label: 'Categorias' },
-  { icon: '⭐', label: 'Favoritos' },
-  { icon: '⚙️', label: 'Configurações' },
+  { icon: '🏠', label: 'Página Inicial' },
+  { icon: '🎬', label: 'Eventos' },
+  { icon: '📂', label: 'Notícias' },
+  { icon: '⭐', label: 'Recarga' },
+  { icon: '⚙️', label: 'Suporte' },
 ];
 
 export default function AsideMenu({ atendimentoLabel }) {
