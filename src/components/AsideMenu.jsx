@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './AsideMenu.css';
 
 const menuItems = [
-  { icon: '🏠', label: 'Ellen' },
+  { icon: '🏠', label: 'Ellen CRisthyna' },
   { icon: '🎬', label: 'Eventos' },
   { icon: '📂', label: 'Notícias' },
   { icon: '⭐', label: 'Recarga' },
