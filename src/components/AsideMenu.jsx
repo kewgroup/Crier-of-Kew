@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import './AsideMenu.css';
 
+// Importando ícones do react-icons
+import { FiHome, FiFileText, FiFolder, FiZap, FiSettings } from 'react-icons/fi';
+
 const menuItems = [
-  { icon: '🏠', label: 'Ellen CRisthyna' },
-  { icon: '🎬', label: 'Eventos' },
-  { icon: '📂', label: 'Notícias' },
-  { icon: '⭐', label: 'Recarga' },
-  { icon: '⚙️', label: 'Suporte' },
+  { icon: <FiHome />, label: 'Eventos' },
+  { icon: <FiFileText />, label: 'Notícias' },
+  { icon: <FiFolder />, label: 'Downloads' },
+  { icon: <FiZap />, label: 'Recargar' },
+  { icon: <FiSettings />, label: 'Suporte' },
 ];
 
 export default function AsideMenu({ atendimentoLabel }) {
@@ -20,13 +23,10 @@ export default function AsideMenu({ atendimentoLabel }) {
         </button>
         {open && atendimentoLabel}
       </div>
+
       <nav className="menu-list">
-        <div className="menu-item">
-          <span className="menu-icon">🏠</span>
-          {open && <span className="menu-label">Home</span>}
-        </div>
-        {menuItems.slice(1).map((item, idx) => (
-          <div className="menu-item" key={idx+1}>
+        {menuItems.map((item, idx) => (
+          <div className="menu-item" key={idx}>
             <span className="menu-icon">{item.icon}</span>
             {open && <span className="menu-label">{item.label}</span>}
           </div>
