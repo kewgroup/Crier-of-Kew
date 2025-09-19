@@ -1,6 +1,7 @@
-import React from 'react';
+import Footer from './Footer';
 import './VideoHero.css';
 import Section from './Section'; // importa o Section
+import Articles from './Articles';
 
 export default function VideoHero() {
   return (
@@ -14,7 +15,7 @@ export default function VideoHero() {
         <div className="monkey-face"></div>
         <div className="monkey-hat"></div>
       </div>
-
+      
       <div className="video-overlay jungle-overlay">
         <div className="video-badges">
           <div className="video-badge">
@@ -58,9 +59,10 @@ export default function VideoHero() {
           <button className="video-btn main">Talk to us →</button>
           <button className="video-btn secondary">See more</button>
         </div>
-
+        <Articles/>
         {/* Section vem logo abaixo dos botões */}
         <Section />
+        <Footer />
       </div>
     </div>
   );
