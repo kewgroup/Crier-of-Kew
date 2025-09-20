@@ -12,10 +12,10 @@ const Form = () => {
 
     emailjs
       .sendForm(
-        "service_gmail",   // coloque seu Service ID
-        "template_gmail",  // coloque seu Template ID
+        "service_xxx",   // 🔹 substitua pelo seu Service ID exato
+        "template_xxx",  // 🔹 substitua pelo seu Template ID exato
         form.current,
-        "syqghb07S3_pbYrle"    // coloque sua Public Key
+        "YOUR_PUBLIC_KEY" // 🔹 substitua pela sua Public Key exata
       )
       .then(
         () => {
@@ -24,8 +24,8 @@ const Form = () => {
           form.current.reset(); // limpa os campos
         },
         (error) => {
-          console.error("Erro ao enviar:", error.text);
-          alert("Ocorreu um erro ao enviar, tente novamente.");
+          console.error("Erro ao enviar:", error);
+          alert("❌ Ocorreu um erro ao enviar, verifique sua configuração.");
           setIsSubmitting(false);
         }
       );
