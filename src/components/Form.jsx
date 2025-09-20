@@ -15,7 +15,7 @@ const Form = () => {
         "service_gmail",   // coloque seu Service ID
         "template_gmail",  // coloque seu Template ID
         form.current,
-        "q39YyKZDMoifx7qo"    // coloque sua Public Key
+        "syqghb07S3_pbYrle"    // coloque sua Public Key
       )
       .then(
         () => {
