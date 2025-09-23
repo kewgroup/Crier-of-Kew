@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './AsideMenu.css';
 
 // Importando ícones do react-icons
-import { FiHome, FiFileText, FiFolder, FiZap, FiSettings } from 'react-icons/fi';
+import { FiHome, FiFileText, FiFolder, FiZap, FiSettings, FiUser } from 'react-icons/fi';
 
 const menuItems = [
   { icon: <FiHome />, label: 'Eventos' },
@@ -10,13 +10,14 @@ const menuItems = [
   { icon: <FiFolder />, label: 'Downloads' },
   { icon: <FiZap />, label: 'Recargar' },
   { icon: <FiSettings />, label: 'Suporte' },
+  { icon: <FiUser />, label: 'Cadastra-se' },
 ];
 
 export default function AsideMenu({ atendimentoLabel }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <aside className={`aside-menu${open ? ' open' : ''}`}>  
+    <aside className={`aside-menu${open ? ' open' : ''}`}>
       <div className="aside-top">
         <button className="menu-toggle" onClick={() => setOpen(!open)}>
           {open ? '✖' : '☰'}
