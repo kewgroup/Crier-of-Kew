@@ -125,15 +125,15 @@
 }
 
 .card-content h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 900;
   margin-bottom: 12px;
   color: #fff;
   letter-spacing: 0.5px;
 }
 
 .card-content p {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   line-height: 1.5;
   color: #e0e0e0;
   margin-bottom: 20px;
@@ -232,6 +232,7 @@
   
   .card-content {
     padding: 20px;
+    margin-top: 1rem;
   }
   
   .card-content i {
@@ -240,12 +241,12 @@
   }
   
   .card-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 1px;
   }
   
   .card-content p {
-    font-size: 0.85rem;
+    font-size: 0.3rem;
     margin-bottom: 15px;
   }
   
