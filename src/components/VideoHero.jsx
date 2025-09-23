@@ -26,18 +26,14 @@ export default function VideoHero() {
 
             {/* Main Content */}
             <div className="hero-text">
-              <h1 className="hero-title">Kew </h1>
+              <h1 className="hero-title">Kew A nostalgia do arcade, com potência de hoje </h1>
 
               <h2 className="hero-subtitle">
-                A nostalgia do arcade, com potência de hoje
+                
               </h2>
 
               <p className="hero-description">
-                Kew Arcade com adrenalina e estilo Mergulhe em Kew, um jogo
-                arcade frenético com visual retrô, trilha sonora pulsante e
-                desafios eletrizantes. Domine fases intensas, desbloqueie
-                power-ups insanos e dispute seu lugar no ranking global.
-                Reflexos rápidos e estratégia são tudo. Está pronto para o topo?
+                Kew é um jogo arcade acelerado com estilo retrô, trilha sonora vibrante e desafios intensos.
               </p>
 
               <div className="hero-features">
