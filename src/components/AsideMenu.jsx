@@ -5,8 +5,8 @@ import './AsideMenu.css';
 import { FiHome, FiFileText, FiFolder, FiZap, FiSettings, FiUser } from 'react-icons/fi';
 
 const menuItems = [
-  { icon: <FiHome />, label: 'Eventos' },
-  { icon: <FiFileText />, label: 'Notícias' },
+  { icon: <FiHome />, label: 'Noticias' },
+  { icon: <FiFileText />, label: 'Evento' },
   { icon: <FiFolder />, label: 'Downloads' },
   { icon: <FiZap />, label: 'Recargar' },
   { icon: <FiSettings />, label: 'Suporte' },
