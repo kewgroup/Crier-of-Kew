@@ -9,7 +9,7 @@ const menuItems = [
   { icon: <FiFileText />, label: 'Evento' },
   { icon: <FiFolder />, label: 'Downloads' },
   { icon: <FiZap />, label: 'Recargar' },
-  { icon: <FiSettings />, label: 'Will' },
+  { icon: <FiSettings />, label: 'Suporte' },
   { icon: <FiUser />, label: 'Cadastra-se' },
 ];
 
