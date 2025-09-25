@@ -6,7 +6,7 @@ export default function VideoHero() {
       {/* Background Video */}
       <div className="hero-video-container">
         <video autoPlay loop muted playsInline className="hero-video">
-          <source src="/videos/carros.mp4" type="video/mp4" />
+          <source src="/videos/roblox.mp4" type="video/mp4" />
         </video>
         <div className="video-overlay"></div>
       </div>
