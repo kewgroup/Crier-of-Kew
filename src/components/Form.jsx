@@ -12,10 +12,10 @@ const Form = () => {
 
     emailjs
       .sendForm(
-        "service_xxx",   // 🔹 substitua pelo seu Service ID exato
-        "template_xxx",  // 🔹 substitua pelo seu Template ID exato
+        "service_gmail",   // 🔹 substitua pelo seu Service ID exato
+        "template_gmail",  // 🔹 substitua pelo seu Template ID exato
         form.current,
-        "YOUR_PUBLIC_KEY" // 🔹 substitua pela sua Public Key exata
+        "syqghb07S3_pbYrle" // 🔹 substitua pela sua Public Key exata
       )
       .then(
         () => {
