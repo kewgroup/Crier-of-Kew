@@ -57,8 +57,11 @@ export default function VideoHero() {
 
               <div className="hero-actions">
                 <button className="hero-btn primary">
-                  Jogue Agora
-                  <span className="btn-arrow">→</span>
+                  <span className="btn-arrow">
+                    <a href="https://www.roblox.com/pt/download">
+                    Jogue Agora →
+                    </a>
+                    </span>
                 </button>
                 <button className="hero-btn secondary">Veja mais</button>
               </div>

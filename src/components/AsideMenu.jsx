@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import './AsideMenu.css';
 
 // Importando ícones do react-icons
-import { FiFolder, FiZap, FiUser } from 'react-icons/fi';
+import { FiZap, FiUser } from 'react-icons/fi';
 import { FaRegNewspaper } from 'react-icons/fa';
 import { MdOutlineStar, MdHeadsetMic } from "react-icons/md";
 
 const menuItems = [
   { icon: <FaRegNewspaper />, label: 'Noticias' },
   { icon: <MdOutlineStar />, label: 'Evento' },
-  { icon: <FiFolder />, label: 'Downloads', url: 'https://www.roblox.com/pt/download' },
   { icon: <FiZap />, label: 'Recargar' },
   { icon: <MdHeadsetMic />, label: 'Suporte', id: 'suporte' }, // rola até seção
   { icon: <FiUser />, label: 'Cadastra-se', url: 'https://www.roblox.com/pt/login' }, // abre link
