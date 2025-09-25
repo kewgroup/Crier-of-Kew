@@ -9,10 +9,10 @@ import { MdOutlineStar, MdHeadsetMic } from "react-icons/md";
 const menuItems = [
   { icon: <FaRegNewspaper />, label: 'Noticias' },
   { icon: <MdOutlineStar />, label: 'Evento' },
-  { icon: <FiFolder />, label: 'Downloads' },
+  { icon: <FiFolder />, label: 'Downloads', url: 'https://www.roblox.com/pt/download' },
   { icon: <FiZap />, label: 'Recargar' },
-  { icon: <MdHeadsetMic />, label: 'Suporte', id: 'suporte' }, // adicionei id aqui
-  { icon: <FiUser />, label: 'Cadastra-se' },
+  { icon: <MdHeadsetMic />, label: 'Suporte', id: 'suporte' }, // rola até seção
+  { icon: <FiUser />, label: 'Cadastra-se', url: 'https://www.roblox.com/pt/login' }, // abre link
 ];
 
 export default function AsideMenu({ atendimentoLabel }) {
@@ -20,10 +20,14 @@ export default function AsideMenu({ atendimentoLabel }) {
 
   const handleClick = (item) => {
     if (item.id) {
+      // scroll para seção
       const section = document.getElementById(item.id);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
+    } else if (item.url) {
+      // abre link em nova aba
+      window.open(item.url, "_blank");
     }
   };
 
@@ -41,7 +45,7 @@ export default function AsideMenu({ atendimentoLabel }) {
           <div
             className="menu-item"
             key={idx}
-            onClick={() => handleClick(item)} // evento de clique
+            onClick={() => handleClick(item)}
             style={{ cursor: "pointer" }}
           >
             <span className="menu-icon">{item.icon}</span>

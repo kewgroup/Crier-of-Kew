@@ -19,7 +19,7 @@ export default function VideoHero() {
             <div className="hero-badges">
               <div className="hero-badge">
                 <span className="badge-icon">⚡</span>
-                Live in 48 Hours
+                Online
               </div>
               <div className="hero-badge">No Setup Fees</div>
             </div>
@@ -57,10 +57,10 @@ export default function VideoHero() {
 
               <div className="hero-actions">
                 <button className="hero-btn primary">
-                  Talk to us
+                  Jogue Agora
                   <span className="btn-arrow">→</span>
                 </button>
-                <button className="hero-btn secondary">See more</button>
+                <button className="hero-btn secondary">Veja mais</button>
               </div>
             </div>
           </div>
