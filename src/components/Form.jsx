@@ -35,7 +35,9 @@ const Form = () => {
     <div className="form-container">
       <div className="form-wrapper">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
-          <h2 className="form-title">Formulário de Contato</h2>
+          <h2 id="suporte" className="form-title">Suporte</h2>
+          
+
 
           <div className="form-group">
             <label htmlFor="user_name" className="form-label">Nome:</label>
@@ -73,8 +75,8 @@ const Form = () => {
           </div>
 
           <div className="form-group">
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               className="form-submit"
               disabled={isSubmitting}
             >
