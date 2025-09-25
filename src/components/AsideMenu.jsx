@@ -3,13 +3,16 @@ import './AsideMenu.css';
 
 // Importando ícones do react-icons
 import { FiHome, FiFileText, FiFolder, FiZap, FiSettings, FiUser } from 'react-icons/fi';
+import { FaRegNewspaper } from 'react-icons/fa';
+import { MdOutlineStar } from "react-icons/md";
+import { MdHeadsetMic } from "react-icons/md";
 
 const menuItems = [
-  { icon: <FiHome />, label: 'Noticias' },
-  { icon: <FiFileText />, label: 'Evento' },
+  { icon: <FaRegNewspaper />, label: 'Noticias' },
+  { icon: <MdOutlineStar />, label: 'Evento' },
   { icon: <FiFolder />, label: 'Downloads' },
   { icon: <FiZap />, label: 'Recargar' },
-  { icon: <FiSettings />, label: 'Suporte' },
+  { icon: <MdHeadsetMic />, label: 'Suporte' },
   { icon: <FiUser />, label: 'Cadastra-se' },
 ];
 
